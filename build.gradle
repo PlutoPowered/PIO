@@ -23,11 +23,11 @@ apply plugin : 'net.sf.gapt'
 //End Plugins
 
 //Program Specific Variables (Fill these in)
-def programVersion = "0.0.0"
+def programVersion = "0.0.1"
 def programGroup = "com.gmail.socraticphoenix"
 def programName = "PIO"
 def repoName = "Main"
-def repoPackageName = "java-api"
+def repoPackageName = "java-api2"
 def programLicense = "MIT"
 def versionControlURL = "https://github.com/PlutoPowered/PIO.git"
 //End Variables

@@ -38,7 +38,7 @@ public class ByteStreamInputStream extends InputStream {
     @Override
     public int read() throws IOException {
         try {
-            return this.source.get();
+            return Byte.toUnsignedInt(this.source.get());
         } catch (EOFException | BufferUnderflowException e) {
             return -1;
         }
