@@ -93,7 +93,8 @@ public class Bytes {
     }
 
     public static String readString(ByteStream buffer) throws IOException {
-        return new String(Bytes.readArray(buffer), StandardCharsets.UTF_8);
+        byte[] array = Bytes.readArray(buffer);
+        return array == null ? null : new String(array, StandardCharsets.UTF_8);
     }
 
     public static int length(String s) {
